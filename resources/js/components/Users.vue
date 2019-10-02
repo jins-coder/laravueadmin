@@ -35,7 +35,6 @@
                            <i class="fas fa-trash-alt red"></i>
                           </a>
                       </td>
-                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -55,11 +54,30 @@
                 </button>
             </div>
             <div class="modal-body">
-              
+               <div class="form-group">
+            <label>Name</label>
+              <input v-model="form.name" type="text" name="name" placeholder="Enter the name"
+                class="form-control" :class="{ 'is-invalid': form.errors.has('name') }">
+              <has-error :form="form" field="name"></has-error>
+                </div>
+             <div class="form-group">
+            <label>Email</label>
+              <input v-model="form.name" type="email" name="email" placeholder="Enter the email"
+                class="form-control" :class="{ 'is-invalid': form.errors.has('email') }">
+              <has-error :form="form" field="email"></has-error>
+                </div>
+                  <div class="form-group">
+            <label>Password</label>
+              <input v-model="form.name" type="password" name="password" placeholder="Enter the password"
+                class="form-control" :class="{ 'is-invalid': form.errors.has('password') }">
+              <has-error :form="form" field="password"></has-error>
+                </div>
             </div>
+          
+            
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Create</button>
             </div>
             </div>
         </div>
@@ -69,6 +87,21 @@
 
 <script>
     export default {
+      data(){
+        return{
+           form : new Form({
+            name:'',
+            email:'',
+            password:''
+        })
+        } 
+      },
+      method:{
+        login(){
+           this.form.post('/login')
+        .then(({ data }) => { console.log(data) })
+        }
+      },
         mounted() {
             console.log('Component mounted.')
         }
