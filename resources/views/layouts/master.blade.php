@@ -241,7 +241,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Control sidebar content goes here -->
         <div class="p-3">
             <h5>Title</h5>
-            <p>Sidebar contentt</p>
+            <p>Sidebar content</p>
         </div>
     </aside>
     <!-- /.control-sidebar -->
