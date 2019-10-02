@@ -165,13 +165,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">
+                        <router-link to="/dashboard" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                               Dashboard
                                 <!-- <span class="right badge badge-danger">A</span> -->
                             </p>
-                        </a>
+                        </router-link>
                     </li>
                    
                     <li class="nav-item has-treeview ">
@@ -184,36 +184,36 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <router-link to="#" class="nav-link active">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Active Page</p>
-                                </a>
+                                </router-link>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <router-link to="#" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Inactive Page</p>
-                                </a>
+                                </router-link>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <router-link to="/profile" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
                               Profile
                             
                             </p>
-                        </a>
+                        </router-link>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <router-link to="/logout" class="nav-link">
                             <i class="nav-icon fas fa-power-off"></i>
                             <p>
                               Logout
                             
                             </p>
-                        </a>
+                        </router-link>
                     </li>
                 </ul>
             </nav>
@@ -229,7 +229,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
-                
+            <router-view></router-view>  
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content -->
@@ -253,7 +253,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             Anything you want
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2014-2019 <a href="#">Jackz</a>.</strong> All rights reserved.
     </footer>
 </div>
 <!-- ./wrapper -->
