@@ -173,9 +173,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </p>
                         </router-link>
                     </li>
-                   
+
                     <li class="nav-item has-treeview ">
-                        <a href="#" class="nav-link">
+                        <a href="javascript:void(0)" class="nav-link">
                             <i class="nav-icon fas fa-cog green"></i>
                             <p>
                                 Management
@@ -233,12 +233,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-    
+
 
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
-            <router-view></router-view>  
+            <router-view></router-view>
             </div><!-- /.container-fluid -->
         </div>
         <!-- /.content -->
